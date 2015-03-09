@@ -1,0 +1,18 @@
+<table>
+    <record>
+         <inventory name="rr">
+         </inventory>
+        <inventory name="rrr">
+            <book year="2000">
+                <field name="title" value="Snow Crash"/>
+                <field name="author" value="Neal Stephenson"/>
+                <field name="publisher" value="Spectra"/>
+                <field name="isbn" value="0553380958"/>
+                <field name="price" value="14.95"/>
+            </book>
+
+            <!-- more books... -->
+
+        </inventory>
+    </record>
+</table>
