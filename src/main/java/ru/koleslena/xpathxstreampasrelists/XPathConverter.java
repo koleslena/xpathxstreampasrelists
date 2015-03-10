@@ -1,3 +1,5 @@
+package ru.koleslena.xpathxstreampasrelists;
+
 import com.thoughtworks.xstream.converters.Converter;
 import com.thoughtworks.xstream.converters.MarshallingContext;
 import com.thoughtworks.xstream.converters.UnmarshallingContext;

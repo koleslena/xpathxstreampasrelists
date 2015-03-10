@@ -1,0 +1,38 @@
+apply plugin: 'idea'
+apply plugin: 'java'
+
+apply plugin: 'application'
+
+mainClassName = 'ru.koleslena.xpathxstreampasrelists.Main'
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    baseName = 'xpathxstreampasrelists'
+    version =  '0.1.0'
+}
+
+apply from: "${rootDir}/dependencies.gradle"
+
+dependencies {
+    compile libs.commonsLang
+    compile libs.xstream
+}
+
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.11'
+}
+
+/*task listJars << {
+    configurations.compile.each { File file -> println file.name }
+}*/
+
+/*
+tasks.withType(jar){
+
+        archiveName = "${baseName}-${version}.${extension}"
+
+    }*/

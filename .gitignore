@@ -3,6 +3,13 @@
 out/*
 *.iml
 *.class
+*.ipr
+*.iws
+gradlew*
+gradle*
+.gradle*
+build/*
+out/*
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/

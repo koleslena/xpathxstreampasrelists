@@ -1,3 +1,5 @@
+package ru.koleslena.xpathxstreampasrelists;
+
 import java.util.List;
 
 /**

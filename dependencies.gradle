@@ -1,0 +1,7 @@
+ext {
+    // define single dependencies
+    libs = [
+            commonsLang         : "commons-lang:commons-lang:2.3",
+            xstream             : "com.thoughtworks.xstream:xstream:1.4.7"
+            ]
+}

@@ -1,3 +1,5 @@
+package ru.koleslena.xpathxstreampasrelists;
+
 import org.apache.commons.lang.time.DateUtils;
 
 import java.lang.reflect.InvocationTargetException;

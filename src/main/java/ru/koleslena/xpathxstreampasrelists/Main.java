@@ -1,3 +1,5 @@
+package ru.koleslena.xpathxstreampasrelists;
+
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.converters.reflection.ReflectionProvider;
 import com.thoughtworks.xstream.mapper.Mapper;
@@ -13,7 +15,7 @@ public class Main {
     public static List<PathNode> pathNodes = LoadUtils.parseStringToListNodes(path);
 
     public static void main(String[] args) {
-        File file = new File("resource/my3.xml");
+        File file = new File("my3.xml");
 
         String nodeName = pathNodes.get(0).getNodeName();
 
