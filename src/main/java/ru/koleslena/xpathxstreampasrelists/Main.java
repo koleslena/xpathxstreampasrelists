@@ -4,7 +4,7 @@ import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.converters.reflection.ReflectionProvider;
 import com.thoughtworks.xstream.mapper.Mapper;
 
-import java.io.File;
+import java.io.InputStream;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -15,7 +15,7 @@ public class Main {
     public static List<PathNode> pathNodes = LoadUtils.parseStringToListNodes(path);
 
     public static void main(String[] args) {
-        File file = new File("my3.xml");
+        InputStream resource = Main.class.getResourceAsStream("my3.xml");
 
         String nodeName = pathNodes.get(0).getNodeName();
 
@@ -33,7 +33,7 @@ public class Main {
         x.registerConverter(new XPathConverter<Book>(mapper, reflectionProvider,
                 XmlRoot.class, map, path, Book.class));
 
-        XmlRoot o = (XmlRoot) x.fromXML(file);
+        XmlRoot o = (XmlRoot) x.fromXML(resource);
 
         List list = o.getList();
         o.toString();
