@@ -71,8 +71,13 @@ public class LoadUtils {
             return list;
         String[] splited = str.split("/");
         for (int i = 0; i < splited.length; i++) {
-            PathNode e = new PathNode();
             String s = splited[i];
+
+            if(s.isEmpty())
+                continue;
+
+            PathNode e = new PathNode();
+
             if(s.contains("@")) {
                 Map<String, String> map = new HashMap();
                 int endIndex = s.indexOf("[");

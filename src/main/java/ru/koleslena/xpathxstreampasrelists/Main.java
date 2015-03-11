@@ -11,7 +11,7 @@ import java.util.Map;
 
 public class Main {
 
-    public static String path = "table/record/inventory[@name='rrr']/book";
+    public static String path = "/table/record/inventory[@name='rrr']/book";
     public static List<PathNode> pathNodes = LoadUtils.parseStringToListNodes(path);
 
     public static void main(String[] args) {
