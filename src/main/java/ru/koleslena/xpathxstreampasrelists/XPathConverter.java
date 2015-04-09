@@ -80,11 +80,10 @@ public class XPathConverter<D extends DictionaryObject> implements Converter {
             if (pathContains(initPath)) {
                 if(pathNodes.size() == initPath.size()) {
                     createDict(reader, context, list);
-                    initPath.remove(format);
                 } else {
                     repeat(initPath, reader, context, list);
                 }
-
+                initPath.remove(format);
             } else {
                 initPath.remove(format);
                 repeat(initPath, reader, context, list);
